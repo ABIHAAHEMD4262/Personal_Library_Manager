@@ -1,63 +1,71 @@
-# 📚 Personal Library Manager
+📚 Personal Library Manager (CLI Version)
+This is a Command Line Interface (CLI) Python application to manage your personal book library using Object-Oriented Programming (OOP) principles. No GUI or web interface is used — everything runs directly in the terminal.
 
-A simple and beautiful web application to manage your personal book collection — built with **Python, Streamlit, and Object-Oriented Programming (OOP)**.
+🚀 Features
+✅ Add a book
 
----
+❌ Remove a book
 
-## 🚀 Features
+🔍 Search by title or author
 
-- ➕ Add new books (title, author, year, genre, read/unread)
-- ❌ Remove books by title
-- 🔍 Search books by title or author
-- 📋 View all books in your collection
-- 📊 See stats like how many books you've read
+📋 Display all books
 
----
+📊 Show reading statistics
 
-## 🛠️ Tech Stack
+🎯 Filter books by genre or year
 
-- **Python 3**
-- **Streamlit** – for building the interactive web app
-- **OOP (Object-Oriented Programming)** – for organizing your code using `Book` and `LibraryManager` classes
+📤 Export book list to CSV
 
----
+💾 Save/load data using JSON
 
-## 📦 Installation
+🛠 Requirements
+Only built-in libraries are used:
 
-1. ✅ Make sure you have Python installed.
-2. 💻 Open your terminal or Anaconda command prompt.
-3. Install Streamlit using `uv`:
+json
 
-   ```bash
-   uv add streamlit
+csv
 
+✅ No installation needed if you're using the uv package manager or Python >= 3.8.
 
-▶️ How to Run
-Once installed, run the app using:
+💡 How to Use
+Clone or Download the Repo
+
+Navigate to the Project Folder
 
 bash
 Copy
 Edit
-streamlit run app.py
-This will open the web app in your browser at:
+cd your_project_folder
+Run the App
 
-arduino
-Copy
-Edit
-http://localhost:8501
-🧠 How It Works
-The app uses Python classes to manage books as objects.
-
-Streamlit handles the UI — forms, buttons, and layout.
-
-Books are temporarily stored in memory (you can extend it to save/load from a file).
-
-📌 Project Structure
 bash
 Copy
 Edit
-personel_library_manager/
-│
-├── app.py          # Main Streamlit application
-└── README.md       # Project description and instructions
+python your_file_name.py
+Replace your_file_name.py with the name of the Python file, for example:
+
+bash
+Copy
+Edit
+python library_manager.py
+Use the Menu
+
+You'll see a menu like:
+
+css
+Copy
+Edit
+Menu
+1. Add a book
+2. Remove a book
+...
+8. Exit
+Follow the prompts to interact.
+
+💾 Data Storage
+All books are saved in a local file: library.json
+
+When you exit the app, your changes are automatically saved
+
+You can also export your books to books.csv
 
